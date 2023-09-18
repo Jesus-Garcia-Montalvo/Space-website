@@ -41,11 +41,12 @@
     margin: 10px;
     position: relative;
     display: inline-block;
-    overflow: hidden;
+    
     .gradient{
       position: absolute;
       background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
       z-index: 1; 
+      margin: 0;
     }
     
     &:hover:before {
@@ -60,6 +61,7 @@
       transition: background-color 0.3s ease;
       color: $black;
       
+      
     }
     &:hover .texto-sobre-img {
       color: $black;
@@ -71,12 +73,12 @@
   .texto-sobre-img {
     position: absolute; 
     bottom: 20px;
-   
+    word-wrap: break-word;
     left: 10px;
     right: 20px;
     background-color: none;
     color: $white;
-    font-size: 2.1em;
+    font-size: 2.4vw;
     z-index: 2; 
   }
   
@@ -92,39 +94,53 @@
 
 #img1{
     background-image: url(../img/desktop/image-deep-earth.jpg);  
-    width: 100%;     
+    width: 100%;    
+    margin: 0; 
     
 }
 #img2{
     background-image: url(../img/desktop/image-night-arcade.jpg);
     width: 100%;
-
+    margin: 0; 
+    
     
 }
 
 #img3{
     background-image: url(../img/desktop/image-soccer-team.jpg);
     width: 100%;
+    margin: 0; 
+    
 }
 #img4{
     background-image: url(../img/desktop/image-grid.jpg);
     width: 100%;
+    margin: 0; 
+    
 }
 #img5{
     background-image: url(../img/desktop/image-from-above.jpg);
     width: 100%;
+    margin: 0; 
+    
 }
 #img6{
     background-image: url(../img/desktop/image-pocket-borealis.jpg);
     width: 100%;
+    margin: 0; 
+    
 }
 #img7{
     background-image: url(../img/desktop/image-curiosity.jpg);
     width: 100%;
+    margin: 0; 
+    
 }
 #img8{
     background-image: url(../img/desktop/image-fisheye.jpg);
     width: 100%;
+    margin: 0; 
+    
 }
 
 //Tableta
@@ -166,7 +182,7 @@
         background-color: none;
         color: $white;
         width: auto;
-        font-size: 1.5em;
+        font-size: 2.6vw;
         
       }
       
@@ -209,7 +225,7 @@
         background-color: none;
         color: $white;
         width: auto;
-        font-size: 1.5em;
+        font-size: 5vw;
       }
   }
 //cambio de imágenes tableta y celular
