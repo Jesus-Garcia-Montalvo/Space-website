@@ -1,5 +1,245 @@
-*{
-    background-color: $black;
+.gallery-contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;    
+
+    & h1{
+      padding: 20px 0 0 30px;
+      font-size: 30px;
+      width: 66%;
+    }
+
+    & button{
+      background-color: $white;
+      padding: 8px 22px ;
+      font-size: 9px;
+      font-weight: 700;
+      border-width: 1px;
+      font-family: $logo-font;
+      letter-spacing: 3px;
+      width: 15%;
+
+      &:hover{
+        background-color: $black;
+        color: $white;
+        font-weight: 500;
+      }
+    }
+  }
+  
+  .gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;    
+  }
+  
+  .images-cont{
+    width: calc(25% - 20px); 
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    .gradient{
+      position: absolute;
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+      z-index: 1; 
+    }
+    
+    &:hover:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0px;
+      width: 100%;
+      height: 100%; 
+      background-color: rgba(255, 255, 255, 0.7); 
+      z-index: 1; 
+      transition: background-color 0.3s ease;
+      color: $black;
+      
+    }
+    &:hover .texto-sobre-img {
+      color: $black;
+      z-index: 2; 
+  }
+    
+  }
+
+  .texto-sobre-img {
+    position: absolute; 
+    bottom: 20px;
+   
+    left: 10px;
+    right: 20px;
+    background-color: none;
     color: $white;
-    font-family: $main-font;
+    font-size: 2.1em;
+    z-index: 2; 
+  }
+  
+  .images-cont div {
+    width: 100%;
+    padding-bottom: 177.78%; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  
+
+#img1{
+    background-image: url(../img/desktop/image-deep-earth.jpg);  
+    width: 100%;     
+    
+}
+#img2{
+    background-image: url(../img/desktop/image-night-arcade.jpg);
+    width: 100%;
+
+    
+}
+
+#img3{
+    background-image: url(../img/desktop/image-soccer-team.jpg);
+    width: 100%;
+}
+#img4{
+    background-image: url(../img/desktop/image-grid.jpg);
+    width: 100%;
+}
+#img5{
+    background-image: url(../img/desktop/image-from-above.jpg);
+    width: 100%;
+}
+#img6{
+    background-image: url(../img/desktop/image-pocket-borealis.jpg);
+    width: 100%;
+}
+#img7{
+    background-image: url(../img/desktop/image-curiosity.jpg);
+    width: 100%;
+}
+#img8{
+    background-image: url(../img/desktop/image-fisheye.jpg);
+    width: 100%;
+}
+
+//Tableta
+@media (min-width: 581px) and (max-width: 900px) {
+    *{
+        margin: 5px 0px 5px 0px;
+    }
+    .gallery-contenedor{
+      display: flex;
+      flex-direction: row;   
+      justify-content: center; 
+      
+    }
+    .gallery-contenedor-title {
+        order: 1; 
+        width: 50% !important;
+        
+      }
+      .gallery-images {
+        order: 2; 
+        
+      }
+      .gallery-contenedor-button{
+        order: 3;  
+        width: 20% !important;
+      }
+      
+    .images-cont {
+      width: calc(50% - 20px);
+    }
+    .images-cont div {
+        width: 100%;
+        padding-bottom: 36.69%; 
+      }
+      .texto-sobre-img {
+        position: absolute;
+        bottom: 20px;
+        left: 30px;
+        background-color: none;
+        color: $white;
+        width: auto;
+        font-size: 1.5em;
+        
+      }
+      
+}
+//celular
+@media (max-width: 580px) {
+    *{
+        margin: 5px 0px 5px 0px;
+    }
+    .gallery-contenedor{
+      display: flex;
+      flex-direction: row;   
+      justify-content: center; 
+      
+    }
+    .gallery-contenedor-title {
+        order: 1; 
+        width: 80% !important;
+      }
+      .gallery-images {
+        order: 2; 
+      }
+      .gallery-contenedor-button {
+        order: 3; 
+        width: 30% !important;
+      }
+      .images-cont {
+        width: 100%; 
+        
+      }
+      .images-cont div {
+        width: 100%;
+        padding-bottom: 36.69%; 
+        
+      }
+      .texto-sobre-img {
+        position: absolute;
+        bottom: 20px;
+        left: 30px;
+        background-color: none;
+        color: $white;
+        width: auto;
+        font-size: 1.5em;
+      }
+  }
+//cambio de imágenes tableta y celular
+@media (max-width: 900px){
+    #img1{
+        
+        background-image: url(../img/mobile/image-deep-earth.jpg);
+    }
+    
+    #img2{
+        background-image: url(../img/mobile/image-night-arcade.jpg);
+    }
+    
+    #img3{
+        background-image: url(../img/mobile/image-soccer-team.jpg);
+    }
+    #img4{
+        background-image: url(../img/mobile/image-grid.jpg);
+    }
+    #img5{
+        background-image: url(../img/mobile/image-from-above.jpg);
+    }
+    #img6{
+        background-image: url(../img/mobile/image-pocket-borealis.jpg);
+    }
+    #img7{
+        background-image: url(../img/mobile/image-curiosity.jpg);
+    }
+    #img8{
+        background-image: url(../img/mobile/image-fisheye.jpg);
+    }
+    
 }
