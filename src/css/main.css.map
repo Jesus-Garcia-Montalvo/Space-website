@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "../sass/_config.scss",
+    "../sass/_gallery.scss"
+  ],
+  "names": [],
+  "mappings": "AAAQ;AACA;AAER;AAOA;ACVA;EACI,kBDGI;ECFJ,ODGI;ECFJ,aDQQ",
+  "file": "main.css"
+}

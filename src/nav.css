@@ -1,0 +1,141 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+
+  height: 8vh;
+}
+
+.nav__item {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav__bar {
+  position: absolute;
+  border-radius: 10px;
+  width: 50%;
+  height: 3px;
+  background-color: white;
+  bottom: -5px;
+  left: 0;
+  margin-left: 25%;
+  text-align: center;
+  visibility: hidden;
+}
+
+.nav__item:hover .nav__bar {
+  visibility: visible; /* Muestra la línea en hover */
+}
+
+.nav__brand {
+  text-transform: uppercase;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}
+.nav__toggler {
+  display: none;
+}
+.nav__toggler div {
+  width: 2.5rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: rgb(255, 251, 251);
+  transition: 0.3s ease-in;
+}
+
+.container {
+  border: 2px solid white;
+  background-color: transparent;
+  padding: 20px;
+  width: 40%;
+  margin-left: 17%;
+  align-items: flex-end;
+  margin-bottom: 17%;
+}
+.container__content {
+  align-items: center;
+  font-size: 40px;
+}
+
+.container__title {
+  color: white; /* Color de texto blanco */
+}
+
+@media screen and (max-width: 768px) {
+  .nav__toggler {
+    display: block;
+    cursor: pointer;
+  }
+  .nav__menu {
+    position: fixed;
+    top: 7vh;
+    right: 0;
+    height: 93vh;
+    width: 100%;
+    background: #000000;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+  }
+  .container {
+    border: 2px solid white;
+    background-color: transparent;
+    padding: 20px;
+    width: 82%;
+    margin-left: 10%;
+
+    margin-bottom: 70%;
+  }
+  .container__content {
+    align-items: center;
+    font-size: 25px;
+  }
+
+  .container__title {
+    color: white; /* Color de texto blanco */
+  }
+}
+/* Active Class */
+.nav__active {
+  transform: translateX(0%);
+}
+
+/* Toggle Icon Animation */
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
+}
