@@ -1,4 +1,5 @@
 import React from "react"; // rafce
+import "../css/main.css";
 
 const Gallery = () => {
     return (
