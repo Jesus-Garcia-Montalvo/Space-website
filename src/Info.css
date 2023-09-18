@@ -21,8 +21,10 @@
   width: 40%;
   background-color: #ffff;
 
-  position: absolute; /* Agregamos esta propiedad */
+  position: absolute;
 }
+
+
 .text {
   margin-top: 5%;
 
@@ -32,7 +34,7 @@ p {
   margin-top: 6%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .cont-Img {
     margin: none;
     width: 100%;
