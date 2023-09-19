@@ -22,6 +22,7 @@
       font-family: $logo-font;
       letter-spacing: 3px;
       width: 15%;
+      cursor: pointer;
 
       &:hover{
         background-color: $black;
@@ -43,6 +44,7 @@
     margin: 10px;
     position: relative;
     display: inline-block;
+    cursor: pointer;
     
     .gradient{
       position: absolute;
@@ -154,7 +156,7 @@
       display: flex;
       flex-direction: row;   
       justify-content: center; 
-      margin: 0;
+      margin: 25% 0;
       
     }
     .gallery-contenedor-title {
@@ -199,7 +201,8 @@
       display: flex;
       flex-direction: row;   
       justify-content: center; 
-      margin: 0;
+      margin: 30vw 0;
+     
     }
     .gallery-contenedor-title {
         order: 1; 

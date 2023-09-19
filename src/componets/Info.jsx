@@ -1,5 +1,5 @@
 import backgroundImage from "../img/desktop/image-interactive.jpg";
-import "../Info.css";
+import "../css/main.css";
 
 const Info = () => {
   return (
@@ -15,10 +15,7 @@ const Info = () => {
             <h1>THE LEADER IN</h1>
             <h1>INTERACTIVE VR</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
-              nisi unde fugit corrupti inventore distinctio eius! Fuga, omnis
-              qui voluptatem, magnam voluptatibus ullam accusamus, vel voluptas
-              repellendus molestias saepe dolorem!
+            Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.
             </p>
           </div>
         </div>

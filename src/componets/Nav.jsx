@@ -2,7 +2,8 @@ import styled from "styled-components";
 import backgroundImage from "../img/desktop/image-hero.jpg"; // Importa la imagen correctamente
 import backgroundMobileImage from "../img/mobile/image-hero.jpg";
 import { useState } from "react";
-import "../nav.css";
+
+import "../css/main.css";
 
 
 const Background = styled.div`
@@ -79,7 +80,7 @@ function Nav() {
       </nav>
       <div className="container">
         <div className="container__content">
-          <h1 className="container__title">IMPERSIVE</h1>
+          <h1 className="container__title">IMMERSIVE</h1>
           <h1 className="container__title">EXPERIENCES</h1>
           <h1 className="container__title container__title--highlighted">
             THAT DELIVER
