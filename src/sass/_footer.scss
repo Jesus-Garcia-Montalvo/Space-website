@@ -1,61 +1,123 @@
 .footer {
-    padding: 3vw 15vw;
-    background-color: $black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 3vw 15vw;
+  background-color: $black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    &-nav{
-        &-item{
-            padding-right: 30px;
-        }
-        
+  &-nav {
+    &-item {
+      padding-right: 30px;
     }
-    
+  }
 }
 
- .logo{
-    width: 50%;
- }
+.logo {
+  width: 50%;
+}
 .footer-columna1,
 .footer-columna2 {
-    display: flex; 
-    flex-direction: column; 
-     
-    align-items: flex-start; 
-    
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+.nav__item_1 {
+  position: relative;
+  cursor: pointer;
+
+  ///spam nav_1
+
+  & .nav__bar_1 {
+    position: absolute;
+    border-radius: 10px;
+    width: 50%;
+    height: 3px;
+    background-color: white;
+    bottom: -5px;
+    text-align: center;
+    left: 5px;
+    visibility: hidden;
+  }
+
+  &:hover {
+    .nav__bar_1 {
+      visibility: visible;
+    }
+  }
+}
+
+///spam nav_2
+.nav__item_2 {
+  position: relative;
+  cursor: pointer;
+
+  ///spam nav_1
+
+  & .nav__bar_2 {
+    position: absolute;
+    border-radius: 10px;
+    width: 30%;
+    height: 3px;
+    background-color: white;
+    bottom: -5px;
+    text-align: center;
+    left: 5px;
+    visibility: hidden;
+  }
+
+  &:hover {
+    .nav__bar_2 {
+      visibility: visible;
+    }
+  }
+
+  ///spam nav_2
 }
 
 .footer-columna2 {
-    align-items: flex-end;
-   
+  align-items: flex-end;
+  margin-top: -65px;
 }
 
 .footer-rights {
-    color: $gray;
-    font-family: $logo-font;
-   
+  margin-top: 10px;
+  color: $gray;
+  font-family: $logo-font;
 }
 
 @media screen and (max-width: 900px) {
-    .footer{
-        flex-direction: column;
-        &-nav{
-            &-item{
-                padding-right: 30px;
-                
-            }   
-        }
+  .footer {
+    flex-direction: column;
+    &-nav {
+      &-item {
+        padding-right: 30px;
+      }
     }
-    .footer-columna1,
-.footer-columna2{
+  }
+  .footer-columna1,
+  .footer-columna2 {
     align-self: center;
     align-items: center;
-}
-.footer-nav-1{
+  }
+  .footer-nav-1 {
     font-size: 2.5vw;
     text-transform: capitalize;
     font-weight: 300;
+  }
 }
-}
+@media screen and (max-width: 750px) {
+  .footer-nav-1 {
+    margin-left: 30px;
+    justify-content: center;
+    margin-top: 50px;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 20px;
 
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

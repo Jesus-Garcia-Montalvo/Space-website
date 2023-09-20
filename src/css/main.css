@@ -282,11 +282,11 @@ a {
   font-size: 1.1vw;
   font-weight: 200;
 }
-.nav__item {
+.nav .nav__item {
   position: relative;
   cursor: pointer;
 }
-.nav__item .nav__bar {
+.nav .nav__item .nav__bar {
   position: absolute;
   border-radius: 10px;
   width: 50%;
@@ -298,7 +298,7 @@ a {
   text-align: center;
   visibility: hidden;
 }
-.nav__item:hover .nav__bar {
+.nav .nav__item:hover .nav__bar {
   visibility: visible;
 }
 .nav__brand {
@@ -365,6 +365,9 @@ a {
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.5s ease-in;
+  }
+  .nav__brand {
+    font-size: 30px;
   }
   .container {
     border: 2px solid white;
@@ -497,11 +500,51 @@ a {
   align-items: flex-start;
 }
 
+.nav__item_1 {
+  position: relative;
+  cursor: pointer;
+}
+.nav__item_1 .nav__bar_1 {
+  position: absolute;
+  border-radius: 10px;
+  width: 50%;
+  height: 3px;
+  background-color: white;
+  bottom: -5px;
+  text-align: center;
+  left: 5px;
+  visibility: hidden;
+}
+.nav__item_1:hover .nav__bar_1 {
+  visibility: visible;
+}
+
+.nav__item_2 {
+  position: relative;
+  cursor: pointer;
+}
+.nav__item_2 .nav__bar_2 {
+  position: absolute;
+  border-radius: 10px;
+  width: 30%;
+  height: 3px;
+  background-color: white;
+  bottom: -5px;
+  text-align: center;
+  left: 5px;
+  visibility: hidden;
+}
+.nav__item_2:hover .nav__bar_2 {
+  visibility: visible;
+}
+
 .footer-columna2 {
   align-items: flex-end;
+  margin-top: -65px;
 }
 
 .footer-rights {
+  margin-top: 10px;
   color: hsl(0, 0%, 55%);
   font-family: "Alata", sans-serif;
 }
@@ -522,6 +565,20 @@ a {
     font-size: 2.5vw;
     text-transform: capitalize;
     font-weight: 300;
+  }
+}
+@media screen and (max-width: 750px) {
+  .footer-nav-1 {
+    margin-left: 30px;
+    justify-content: center;
+    margin-top: 50px;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 

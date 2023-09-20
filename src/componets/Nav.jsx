@@ -5,7 +5,6 @@ import { useState } from "react";
 
 import "../css/main.css";
 
-
 const Background = styled.div`
   font-size: 1.5em;
   color: #bf4f74;
