@@ -68,6 +68,12 @@ function Nav() {
             <span className="nav__bar"></span>
           </li>
           <li className="nav__item">
+            <a href="#" className="nav__link">
+              Support
+            </a>
+            <span className="nav__bar"></span>
+          </li>
+          <li className="nav__item">
             <a href="#" className="nav__link"></a>
             <span className="nav__bar"></span>
           </li>
