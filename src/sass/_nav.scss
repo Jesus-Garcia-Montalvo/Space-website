@@ -63,6 +63,7 @@ a {
   &__brand {
    font-size: 2.4vw;
     font-family: $logo-font;
+    text-transform: lowercase;
   }
 
   &__menu {
@@ -173,5 +174,12 @@ a {
     .line3 {
       transform: rotate(45deg) translate(-4px, -5px);
     }
+  }
+}
+
+//Tableta
+@media (min-width: 480px) and (max-width: 900px){
+  .container{
+    margin-bottom: 20%;
   }
 }

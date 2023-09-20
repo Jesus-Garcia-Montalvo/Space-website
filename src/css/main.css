@@ -300,6 +300,7 @@ a {
 .nav__brand {
   font-size: 2.4vw;
   font-family: "Alata", sans-serif;
+  text-transform: lowercase;
 }
 .nav__menu {
   display: flex;
@@ -391,6 +392,11 @@ a {
     transform: rotate(45deg) translate(-4px, -5px);
   }
 }
+@media (min-width: 480px) and (max-width: 900px) {
+  .container {
+    margin-bottom: 20%;
+  }
+}
 .cont-Img {
   width: 100%;
   display: flex;
@@ -463,6 +469,55 @@ a {
   .text p {
     font-size: 3.5vw;
     padding: 10px;
+  }
+}
+.footer {
+  padding: 3vw 15vw;
+  background-color: hsl(0, 0%, 0%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-nav-item {
+  padding-right: 30px;
+}
+
+.logo {
+  width: 50%;
+}
+
+.footer-columna1,
+.footer-columna2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-columna2 {
+  align-items: flex-end;
+}
+
+.footer-rights {
+  color: hsl(0, 0%, 55%);
+  font-family: "Alata", sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer-nav-item {
+    padding-right: 30px;
+  }
+  .footer-columna1,
+  .footer-columna2 {
+    align-self: center;
+    align-items: center;
+  }
+  .footer-nav-1 {
+    font-size: 2.5vw;
+    text-transform: capitalize;
+    font-weight: 300;
   }
 }
 
