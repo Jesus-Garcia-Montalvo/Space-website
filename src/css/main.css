@@ -538,9 +538,14 @@ a {
   visibility: visible;
 }
 
+.footer-columna1 {
+  margin-left: 3%;
+}
+
 .footer-columna2 {
   align-items: flex-end;
   margin-top: -65px;
+  margin-right: -12%;
 }
 
 .footer-rights {
@@ -567,7 +572,7 @@ a {
     font-weight: 300;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
   .footer-nav-1 {
     margin-left: 30px;
     justify-content: center;
